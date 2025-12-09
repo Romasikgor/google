@@ -1,0 +1,41 @@
+@mixin btn {
+    font-size: 20px;
+    font-weight: 600;
+    color: #609CF5;
+    padding: 15px 55px;
+    border: 2px solid #609CF5;
+    background: #f8efef;
+    border-radius: 7px;
+    margin-top: 25px;
+    transition: background 1s ease;
+    cursor: pointer;
+
+    &:hover {
+        color: #e0d8d8;
+        background: #609CF5;
+    }
+}
+
+@mixin adaptCardMain {
+    @media (max-width:1400px) {
+        flex-wrap: wrap;
+        border: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@mixin imgCard {
+     @media (max-width:1400px) and (min-width: 900px) {
+        height: 600px;
+        width: 100%;
+    }
+    @media (max-width:900px) and (min-width: 500px) {
+        height: 400px;
+        width: 100%;
+    }
+    @media (max-width:500px) {
+        height: 250px;
+        width: 100%;
+    }
+}
