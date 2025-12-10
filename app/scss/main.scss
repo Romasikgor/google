@@ -82,7 +82,13 @@ img {
                 border: none;
                 width: 90%;
                 font-size: 15px;
-                color: #ccc;
+                color: #000;
+                cursor: pointer;
+                transition: all 1000ms ease;
+
+                &:hover {
+                    background: #ccc;
+                }
 
                 @media (max-width:600px) {
                     padding: 10px;
